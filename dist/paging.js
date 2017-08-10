@@ -139,7 +139,7 @@ angular.module('bw.paging', []).directive('paging', function () {
         scope.textNextClass = scope.textNextClass || 'fa fa-chevron-right';
         scope.textPrevClass = scope.textPrevClass || 'fa fa-chevron-left';
 
-        scope.textTitlePage = scope.textTitlePage || 'PAGING.PAGE {page}';
+        scope.textTitlePage = scope.textTitlePage || '{page}';
         scope.textTitleFirst = scope.textTitleFirst || 'PAGING.FIRST'; 
         scope.textTitleLast = scope.textTitleLast || 'PAGING.LAST'; 
         scope.textTitleNext = scope.textTitleNext || 'PAGING.NEXT'; 
