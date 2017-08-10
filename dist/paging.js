@@ -92,7 +92,7 @@ angular.module('bw.paging', []).directive('paging', function () {
     function fieldTemplate(el, attrs) {
         return '<ul data-ng-hide="Hide" data-ng-class="ulClass"> ' +
             '<li ' +
-            'title="{{Item.title}}" ' +
+            'title="{{Item.title | translate}}" ' +
             'data-ng-class="Item.liClass" ' +
             'data-ng-repeat="Item in List"> ' +
             '<a ' +
