@@ -1,5 +1,6 @@
 {
   "name": "custom-angular-bw-paging",
+  "version": "2.2.2",
   "homepage": "https://github.com/brantwills/Angular-Paging",
   "description": "This is just a custom version of Angular-Paging version 2.2.2.",
   "main": "dist/paging.js",
