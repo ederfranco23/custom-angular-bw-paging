@@ -134,16 +134,16 @@ angular.module('bw.paging', []).directive('paging', function () {
         scope.textNext = scope.textNext || '>';
         scope.textPrev = scope.textPrev || '<';
 
-        scope.textFirstClass = scope.textFirstClass || '';
-        scope.textLastClass = scope.textLastClass || '';
-        scope.textNextClass = scope.textNextClass || '';
-        scope.textPrevClass = scope.textPrevClass || '';
+        scope.textFirstClass = scope.textFirstClass || 'fa fa-backward';
+        scope.textLastClass= scope.textLastClass || 'fa fa-forward';
+        scope.textNextClass = scope.textNextClass || 'fa fa-chevron-right';
+        scope.textPrevClass = scope.textPrevClass || 'fa fa-chevron-left';
 
-        scope.textTitlePage = scope.textTitlePage || 'Page {page}';
-        scope.textTitleFirst = scope.textTitleFirst || 'First Page';
-        scope.textTitleLast = scope.textTitleLast || 'Last Page';
-        scope.textTitleNext = scope.textTitleNext || 'Next Page';
-        scope.textTitlePrev = scope.textTitlePrev || 'Previous Page';
+        scope.textTitlePage = scope.textTitlePage || 'PAGING.PAGE {page}';
+        scope.textTitleFirst = scope.textTitleFirst || 'PAGING.FIRST'; 
+        scope.textTitleLast = scope.textTitleLast || 'PAGING.LAST'; 
+        scope.textTitleNext = scope.textTitleNext || 'PAGING.NEXT'; 
+        scope.textTitlePrev = scope.textTitlePrev || 'PAGING.PREVIOUS'; 
 
         scope.hideIfEmpty = evalBoolAttribute(scope, attrs.hideIfEmpty);
         scope.showPrevNext = evalBoolAttribute(scope, attrs.showPrevNext);
